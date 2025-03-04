@@ -7,10 +7,22 @@ body {
 /* Nav Styles */
 nav {
     background-color: cadetblue;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: 2px solid;
     display:flex;
     justify-content: space-around;
+    box-shadow: 2px 2px grey;
+    transition: transform .03s ease, box-shadow .03s ease;
 }
+
+nav:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
 
 nav p, nav a {}
 
@@ -21,9 +33,28 @@ nav a:hover {}
 /* Footer Styles */
 footer {
     background: cadetblue;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: 2px solid;
     display: flex;
     justify-content: center;
+    box-shadow: 2px 2px grey;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+footer:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.conFooter {
+    /*
+    position:absolute;
+    bottom: 0;
+    width: 98%;
+    */
 }
 
 footer a {}
@@ -31,7 +62,26 @@ footer a {}
 footer a:hover {}
 
 /* Splash Section */
-.splash {}
+.splash {
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.splash:hover{
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
 
 .splash h1 {
     font-size: 2em;
@@ -40,8 +90,15 @@ footer a:hover {}
 }
 
 .splash img {
-    border-radius: 50px;
+    justify-content: left;
+    border-radius: 25px;
     border-style: solid;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.splash img:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
 }
 
 .splash p {
@@ -49,10 +106,32 @@ footer a:hover {}
     font-size: 1.05em;
 }
 
+
+
 /* Horizontal Rules */
 hr {
+    /*
     border: 2px solid;
     border-color: cadetblue;
+    */
+    overflow: visible; 
+    height:30 px;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    
+}
+
+hr::before{
+    display:block;
+    content: "";
+    height:30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
 /* Sections */
@@ -68,9 +147,89 @@ section h2 {
 section p {
 }
 
+.education {
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.education:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
 .education p {
     font-weight: bold;
     font-size: 1.05em;
+}
+
+.Honors {
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.Honors:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey;
+}
+
+.Skills{
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.Skills:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.Leadership{
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.Leadership:hover {
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.Projects {
+    border: 2px solid;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    text-align:center;
+    box-shadow: 2px 2px grey;
+    border-radius: 25px;
+    margin: 15px;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.Projects:hover{
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
 }
 
 /* link styles */
@@ -106,15 +265,74 @@ a:hover {
     gap: 10px;
 }
 
-.card {
+.card1 {
     border: 2px solid;
     background-color: aliceblue;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 15px;
     text-align: center;
     box-shadow: 2px 2px grey;
+    transition: transform .03s ease, box-shadow .03s ease;
 }
 
-.card img {
+.card1:hover{
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.card2:hover{
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.card3:hover{
+    transform: scale(1.01);
+    box-shadow: 2.01px 2.01px grey
+}
+
+.card2 {
+    border: 2px solid;
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 2px 2px grey;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.card3 {
+    border: 2px solid;
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 2px 2px grey;
+    transition: transform .03s ease, box-shadow .03s ease;
+}
+
+.card1 img {
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card2 img {
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card3 img {
     object-fit: cover;
     border-radius: 50%;
     margin-top: 15px;
@@ -127,8 +345,9 @@ a:hover {
 /* Contact Page Styles */
 .one-col {
     display:grid;
-    text-align: center;   
+    text-align: center;  
     grid-template-columns: 1fr;
+    margin: 5%;
 }
 
 .one-col input {
@@ -152,6 +371,25 @@ a:hover {
     background-color: teal;
     display: block;
     margin: 10px auto;
+}
+
+.bodyThank {
+    text-align: center; 
+}
+
+.hThank {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: 'Snell Roundhand', cursive;
+    margin: 5%;
+}
+
+.border-link {
+    border: 2px solid black;
+    margin: 10px;
+    background: teal;
+    color: white;
+    box-shadow: 2px 2px grey;
 }
 
 form {}
